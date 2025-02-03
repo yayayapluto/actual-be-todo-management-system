@@ -1,17 +1,11 @@
-    var express = require('express');
-    var router = express.Router();
-    const { pool } = require('../database/db');
+var express = require('express');
+var router = express.Router();
 
 
-    // GET all users
-    router.get('/', async (req, res) => {
-      try {
-        const result = await pool.query('SELECT * FROM users');
-        res.json(result.rows);
-      } catch (err) {
-        console.error(err);
-        res.status(500).send(err.message);
-      }
-    });
+// Welcome Page
 
-    module.exports = router;    
+router.get('/', (req, res) => {
+  res.send('Selamat Datang\n Rest CRUD API with Node.js, Express, and Postgres API');
+});
+
+module.exports = router;    
