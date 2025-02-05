@@ -44,5 +44,3 @@ model UserTask {
 
   @@id([user_id, task_id])  // Composite key
 }
-
-

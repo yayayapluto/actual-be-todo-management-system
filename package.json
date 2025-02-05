@@ -4,17 +4,21 @@
   "private": true,
   "type": "commonjs",
   "scripts": {
+    "seed": "node ./prisma/seed",
     "dev": "nodemon -w ./*.js ./*.js",
     "start": "node ./bin/www",
     "prepare": "husky"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.4.0",
     "@prisma/client": "^6.3.0",
     "bcrypt": "^5.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
+    "express-validator": "^7.2.1",
+    "faker": "^6.6.6",
     "http-errors": "~1.6.3",
     "jade": "^1.9.2",
     "lint-staged": "^15.4.2",

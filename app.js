@@ -44,7 +44,7 @@ app.use('/user-task', userTaskRouter);
 // Handle Error
 app.use(function(req, res, next) {
   next(createError(404));
-});
+// }); [reason: udh ketutup duluan lek, jadinya res nya not defined]
 
 // error 
   // set locals, only providing error in development
@@ -56,14 +56,17 @@ app.use(function(req, res, next) {
   res.render('error');
 });
 
-// Set port
-const port = process.env.APP_PORT || 4000;
 
-console.log(process.env.APP_PORT)
 
-// Start server
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+// // Set port
+// const port = process.env.APP_PORT || 4000;
+
+// console.log(process.env.APP_PORT)
+
+// // Start server
+// app.listen(port, () => {
+//   console.log(`Server is running on port ${port}`);
+// });
+// [reason: di bin/www udh run di port yg sama, jadi tak pikir ini gaperlu hihihi]
 
 module.exports = app;

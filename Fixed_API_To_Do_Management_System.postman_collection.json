@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "8ea4260e-2f8f-4467-a2e4-393a374560b6",
+		"name": "API To  Do Management System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30402736"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get Users",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}:{{port}}/users/get-all/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/get-user/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"farras123\",\r\n    \"email\": \"farras123@gmail.com\",\r\n    \"password\": \"cuk123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"anjay123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users/update/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/delete/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User Task",
+			"item": [
+				{
+					"name": "Get User Task",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}:{{port}}/user-task/get-all/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Task by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/user-task/get-user-task/1/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Create User Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 5,\r\n    \"task_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/user-task/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 1,\r\n    \"taskId\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/user-task/update-user-task/5/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/user-task/delete/1/2"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Get Tasks",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									""
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"url": "{{base_url}}:{{port}}/users/get-all/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Task by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/get-user/2"
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"farras123\",\r\n    \"email\": \"farras123@gmail.com\",\r\n    \"password\": \"cuk123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users/create"
+					},
+					"response": []
+				},
+				{
+					"name": "Update User",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"anjay123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{base_url}}:{{port}}/users/update/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{base_url}}:{{port}}/users/delete/1"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Greeting API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{base_url}}:{{port}}"
+			},
+			"response": []
+		}
+	]
+}
