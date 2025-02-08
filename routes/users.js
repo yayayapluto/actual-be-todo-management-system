@@ -158,8 +158,11 @@ router.put(
 // Delete User
 router.delete("/delete/:id", checkUserExists, async (req, res) => {
   const { id } = req.params;
-  const user = await prisma.user.delete({
+  const user = await prisma.user.update({
     where: { id: parseInt(id) },
+    data: {
+      is_deleted: true
+    }
   });
 
   return res

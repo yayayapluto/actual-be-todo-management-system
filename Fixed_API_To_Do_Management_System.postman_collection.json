@@ -34,16 +34,110 @@
 						],
 						"url": "{{base_url}}:{{port}}/users/get-all/"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": "{{base_url}}:{{port}}/users/get-all/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1355"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"54b-9zuPZ9WM5XzV/Q1+SiEeXgkRX3g\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:29:28 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil mengambil semua data pengguna\"\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"username\": \"Eveline\",\n            \"email\": \"Eveline.Schultz41@hotmail.com\",\n            \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n            \"created_at\": \"2025-02-08T01:26:55.079Z\",\n            \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"username\": \"Reanna\",\n            \"email\": \"Reanna47@hotmail.com\",\n            \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n            \"created_at\": \"2025-02-08T01:26:55.079Z\",\n            \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 3,\n            \"username\": \"Emery\",\n            \"email\": \"Emery_Wisozk84@gmail.com\",\n            \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n            \"created_at\": \"2025-02-08T01:26:55.079Z\",\n            \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 4,\n            \"username\": \"Delmer\",\n            \"email\": \"Delmer_Shields@hotmail.com\",\n            \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n            \"created_at\": \"2025-02-08T01:26:55.079Z\",\n            \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 5,\n            \"username\": \"Finn\",\n            \"email\": \"Finn82@yahoo.com\",\n            \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n            \"created_at\": \"2025-02-08T01:26:55.079Z\",\n            \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Get User by Id",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/users/get-user/2"
+						"url": "{{base_url}}:{{port}}/users/get-user/1"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get User by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}:{{port}}/users/get-user/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "352"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"160-tWIJlSO9PFOBIayFaGGAFF4/hCY\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:30:22 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil mengambil data pengguna dengan id:1\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"username\": \"Eveline\",\n        \"email\": \"Eveline.Schultz41@hotmail.com\",\n        \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n        \"created_at\": \"2025-02-08T01:26:55.079Z\",\n        \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Create User",
@@ -61,7 +155,60 @@
 						},
 						"url": "{{base_url}}:{{port}}/users/create"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create User",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"farras123\",\r\n    \"email\": \"farras123@gmail.com\",\r\n    \"password\": \"cuk123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/users/create"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "334"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"14e-CZwksRvYo0HnY+Y63CyMU0l+24U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:30:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil menambahkan data pengguna\"\n    },\n    \"data\": {\n        \"id\": 6,\n        \"username\": \"farras123\",\n        \"email\": \"farras123@gmail.com\",\n        \"password\": \"$2b$10$Ya0s3EGuxvcDTdVPIEx58e8xYk/qohmz2FYkE1uFkPpYy.ZeDajBy\",\n        \"created_at\": \"2025-02-08T01:30:31.168Z\",\n        \"updated_at\": \"2025-02-08T01:30:31.168Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Update User",
@@ -77,16 +224,69 @@
 								}
 							}
 						},
-						"url": "{{base_url}}:{{port}}/users/update/1"
+						"url": "{{base_url}}:{{port}}/users/update/6"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"password\": \"anjay123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/users/update/6"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "341"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"155-W1rNe0V6NpqLKGYjKsfIJaKUqs0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:30:38 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil memperbarui pengguna dengan id:6\"\n    },\n    \"data\": {\n        \"id\": 6,\n        \"username\": \"farras123\",\n        \"email\": \"farras123@gmail.com\",\n        \"password\": \"$2b$10$SIJ1P1Km9ejN6a5vRoHHb.TV0vLKAOixZYKLCZBsjhIj/lByCUlmC\",\n        \"created_at\": \"2025-02-08T01:30:31.168Z\",\n        \"updated_at\": \"2025-02-08T01:30:38.607Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete User",
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/users/delete/1"
+						"url": "{{base_url}}:{{port}}/users/delete/6"
 					},
 					"response": []
 				}
@@ -120,16 +320,110 @@
 						],
 						"url": "{{base_url}}:{{port}}/user-task/get-all/"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get User Task",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": "{{base_url}}:{{port}}/user-task/get-all/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "31995"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"7cfb-ndK7n1xhNLw2IABbKqMi4ITOZas\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:36:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil memgambil demua data UserTask\"\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"user_id\": 2,\n            \"task_id\": 1,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 1,\n                \"title\": \"bullying a person with Cancer zodiac\",\n                \"desc\": \"intently tuber geez valiantly vice kissingly quaff gosh snuggle debit\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-02-08T14:04:08.663Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:06.145Z\",\n                \"updated_at\": \"2025-02-08T01:27:06.145Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 3,\n            \"user_id\": 3,\n            \"task_id\": 3,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 3,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"though noisily license fooey license another astride downchange following conservative\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2025-11-11T18:52:02.055Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:06.736Z\",\n                \"updated_at\": \"2025-02-08T01:36:00.674Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": true\n            }\n        },\n        {\n            \"id\": 4,\n            \"user_id\": 1,\n            \"task_id\": 4,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 4,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"psst crystallize gripping safeguard off yin since equally towards bob\",\n                \"priority\": \"low\",\n                \"deadline\": \"2026-01-20T11:57:17.515Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:06.861Z\",\n                \"updated_at\": \"2025-02-08T01:27:06.861Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 5,\n            \"user_id\": 3,\n            \"task_id\": 5,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 5,\n                \"title\": \"bullying a person with Gemini zodiac\",\n                \"desc\": \"frightened violently interestingly underneath crushing heartbeat crank intently cruelly dim\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-10-27T10:03:04.377Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:06.991Z\",\n                \"updated_at\": \"2025-02-08T01:27:06.991Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 6,\n            \"user_id\": 5,\n            \"task_id\": 6,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 6,\n                \"title\": \"bullying a person with Libra zodiac\",\n                \"desc\": \"lounge phew at eggplant longboat ha spectacles failing that even\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-06-27T09:55:36.385Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:07.110Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.110Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 7,\n            \"user_id\": 4,\n            \"task_id\": 7,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 7,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"really through broken bleakly outside pressure dearly yarmulke smoothly probable\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2025-01-02T08:45:29.256Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:07.215Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.215Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 8,\n            \"user_id\": 4,\n            \"task_id\": 8,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 8,\n                \"title\": \"bullying a person with Gemini zodiac\",\n                \"desc\": \"wholly catalog daintily off strategy ew uh-huh inside when yowza\",\n                \"priority\": \"high\",\n                \"deadline\": \"2024-12-20T16:16:53.741Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:07.333Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.333Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 9,\n            \"user_id\": 4,\n            \"task_id\": 9,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 9,\n                \"title\": \"bullying a person with Sagittarius zodiac\",\n                \"desc\": \"of oh icebreaker duh cricket anti yet how aw cleverly\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-06-28T16:32:39.418Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:07.436Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.436Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 10,\n            \"user_id\": 1,\n            \"task_id\": 10,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 10,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"including convince legging supposing bootleg affiliate doodle phooey and retract\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-06-17T03:36:59.784Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:07.574Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.574Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 11,\n            \"user_id\": 2,\n            \"task_id\": 11,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 11,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"rectangular during rotating for once proper sin er knight functional\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-06-24T12:35:13.509Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:07.674Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.674Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 12,\n            \"user_id\": 1,\n            \"task_id\": 12,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 12,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"sans jaggedly bobble yowza worth through from soggy urban across\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-09-15T19:55:23.754Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:07.765Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.765Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 13,\n            \"user_id\": 2,\n            \"task_id\": 13,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 13,\n                \"title\": \"bullying a person with Libra zodiac\",\n                \"desc\": \"adventurously pry curse ew soft gosh ugh outrun monthly bicycle\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-10-05T00:57:51.112Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:07.869Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.869Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 14,\n            \"user_id\": 4,\n            \"task_id\": 14,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 14,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"unfurl beside fork instead meaty icebreaker through even till internationalize\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-02-18T09:19:53.507Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:07.965Z\",\n                \"updated_at\": \"2025-02-08T01:27:07.965Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 15,\n            \"user_id\": 5,\n            \"task_id\": 15,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 15,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"conceptualize into regarding idolized ascertain hurtful airport density miserably maestro\",\n                \"priority\": \"high\",\n                \"deadline\": \"2024-06-03T12:27:45.623Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:08.071Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.071Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 16,\n            \"user_id\": 1,\n            \"task_id\": 16,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 16,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"boohoo however yowza fooey viciously whereas at which intermix on\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2025-11-13T16:57:06.193Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:08.179Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.179Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 17,\n            \"user_id\": 4,\n            \"task_id\": 17,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 17,\n                \"title\": \"bullying a person with Pisces zodiac\",\n                \"desc\": \"till mobilize gah beneficial boo dispose dual guide gosh why\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2025-02-14T15:54:29.898Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:08.287Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.287Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 18,\n            \"user_id\": 4,\n            \"task_id\": 18,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 18,\n                \"title\": \"bullying a person with Cancer zodiac\",\n                \"desc\": \"so bah often ample stark complication meaningfully affect for gee\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-01-07T16:02:49.655Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:08.393Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.393Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 19,\n            \"user_id\": 5,\n            \"task_id\": 19,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 19,\n                \"title\": \"bullying a person with Aquarius zodiac\",\n                \"desc\": \"phooey amid resolve besides disgorge dreamily merrily tankful after for\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-09-24T09:59:07.024Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:08.491Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.491Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 20,\n            \"user_id\": 3,\n            \"task_id\": 20,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 20,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"though highlight rudely that advertisement unlike conservative zowie enormously round\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-01-08T16:59:09.251Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:08.631Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.631Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 21,\n            \"user_id\": 4,\n            \"task_id\": 21,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 21,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"sleepily blight reconsideration ornery woot for whoever psst woot aha\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-05-28T13:05:28.522Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:08.735Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.735Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 22,\n            \"user_id\": 3,\n            \"task_id\": 22,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 22,\n                \"title\": \"bullying a person with Virgo zodiac\",\n                \"desc\": \"yowza brr so whether aha guidance whose woot ick roger\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-06-20T21:15:07.816Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:08.858Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.858Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 23,\n            \"user_id\": 1,\n            \"task_id\": 23,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 23,\n                \"title\": \"bullying a person with Libra zodiac\",\n                \"desc\": \"for aw mid yummy crystallize palate huzzah furthermore gripping welcome\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-01-20T01:25:56.633Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:08.955Z\",\n                \"updated_at\": \"2025-02-08T01:27:08.955Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 24,\n            \"user_id\": 2,\n            \"task_id\": 24,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 24,\n                \"title\": \"bullying a person with Aquarius zodiac\",\n                \"desc\": \"valley majestic nauseate staid psst out for prioritize formal excepting\",\n                \"priority\": \"high\",\n                \"deadline\": \"2024-07-20T12:14:01.067Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:09.052Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.052Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 25,\n            \"user_id\": 4,\n            \"task_id\": 25,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 25,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"poorly supposing or via since majority whereas ouch porter misappropriate\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-08-14T22:12:26.401Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:09.163Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.163Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 26,\n            \"user_id\": 4,\n            \"task_id\": 26,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 26,\n                \"title\": \"bullying a person with Taurus zodiac\",\n                \"desc\": \"allegation mortise neaten evince proliferate lest finally yippee ah regarding\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-12-21T00:18:55.472Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:09.264Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.264Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 27,\n            \"user_id\": 2,\n            \"task_id\": 27,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 27,\n                \"title\": \"bullying a person with Pisces zodiac\",\n                \"desc\": \"for treasure muted distorted yuck youthfully within anenst newsprint kissingly\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-06-17T16:33:39.779Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:09.371Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.371Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 28,\n            \"user_id\": 3,\n            \"task_id\": 28,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 28,\n                \"title\": \"bullying a person with Virgo zodiac\",\n                \"desc\": \"worth beneficial tousle importance teammate cease reference after sizzle amongst\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-06-06T14:25:33.588Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:09.472Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.472Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 29,\n            \"user_id\": 4,\n            \"task_id\": 29,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 29,\n                \"title\": \"bullying a person with Capricorn zodiac\",\n                \"desc\": \"than bah as mmm whoever incidentally apud metabolite indelible what\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-04-27T12:13:56.694Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:09.586Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.586Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 30,\n            \"user_id\": 3,\n            \"task_id\": 30,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 30,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"dampen and highly recent essence pish suspiciously although once yahoo\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-02-16T05:52:50.500Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:09.693Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.693Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 31,\n            \"user_id\": 5,\n            \"task_id\": 31,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 31,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"trial surge gosh vaguely guzzle because summer beyond embalm ferociously\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-09-10T14:27:39.291Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:09.856Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.856Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 32,\n            \"user_id\": 5,\n            \"task_id\": 32,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 32,\n                \"title\": \"bullying a person with Scorpio zodiac\",\n                \"desc\": \"celebrate wrongly quaintly monocle barring sunbeam mystify unit times vainly\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-10-19T20:14:49.477Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:09.980Z\",\n                \"updated_at\": \"2025-02-08T01:27:09.980Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 33,\n            \"user_id\": 4,\n            \"task_id\": 33,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 33,\n                \"title\": \"bullying a person with Virgo zodiac\",\n                \"desc\": \"forenenst tremendously napkin exempt whenever carelessly ah speedily joyfully and\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-11-11T23:10:27.933Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:10.110Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.110Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 34,\n            \"user_id\": 1,\n            \"task_id\": 34,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 34,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"a along ah and fiercely or potentially fidget fellow towards\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-01-16T15:16:16.443Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:10.229Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.229Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 35,\n            \"user_id\": 1,\n            \"task_id\": 35,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 35,\n                \"title\": \"bullying a person with Taurus zodiac\",\n                \"desc\": \"whistle emphasize bah as drat ownership afford record wear equate\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-07-25T02:19:09.604Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:10.455Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.455Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 36,\n            \"user_id\": 2,\n            \"task_id\": 36,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 36,\n                \"title\": \"bullying a person with Cancer zodiac\",\n                \"desc\": \"wherever shakily now after if joyously hydrocarbon grim gracious closely\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-06-05T23:49:09.750Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:10.712Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.712Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 37,\n            \"user_id\": 5,\n            \"task_id\": 37,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 37,\n                \"title\": \"bullying a person with Cancer zodiac\",\n                \"desc\": \"seriously valiantly gosh absent oh low selfish gee disloyal woot\",\n                \"priority\": \"low\",\n                \"deadline\": \"2026-02-03T15:16:21.576Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:10.824Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.824Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 38,\n            \"user_id\": 2,\n            \"task_id\": 38,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 38,\n                \"title\": \"bullying a person with Aquarius zodiac\",\n                \"desc\": \"per lovingly to monthly chip chasuble worthless extension ew all\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-06-02T23:24:22.518Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:10.927Z\",\n                \"updated_at\": \"2025-02-08T01:27:10.927Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 39,\n            \"user_id\": 5,\n            \"task_id\": 39,\n            \"user\": {\n                \"id\": 5,\n                \"username\": \"Finn\",\n                \"email\": \"Finn82@yahoo.com\",\n                \"password\": \"$2b$10$8HDqMJ8ZWVmOD1ub7G6zDOFgEVBXlvoc.cadTKqZiLsYdGf.kHV3.\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 39,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"yippee that attend svelte punctually fill vice fax although freezing\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-03-22T06:15:18.357Z\",\n                \"is_done\": false,\n                \"created_by\": \"Finn\",\n                \"created_at\": \"2025-02-08T01:27:11.044Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.044Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 40,\n            \"user_id\": 2,\n            \"task_id\": 40,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 40,\n                \"title\": \"bullying a person with Pisces zodiac\",\n                \"desc\": \"ugh rag exalted athwart onto irresponsible deadly ha vivaciously apud\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2024-11-12T22:31:05.533Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:11.139Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.139Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 41,\n            \"user_id\": 4,\n            \"task_id\": 41,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 41,\n                \"title\": \"bullying a person with Taurus zodiac\",\n                \"desc\": \"reach where inasmuch till exotic scarily mill past aha atop\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-07-28T02:25:38.931Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:11.245Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.245Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 42,\n            \"user_id\": 2,\n            \"task_id\": 42,\n            \"user\": {\n                \"id\": 2,\n                \"username\": \"Reanna\",\n                \"email\": \"Reanna47@hotmail.com\",\n                \"password\": \"$2b$10$xNT5WMtnGWeaECUQkt6eeeTqOYYQvLmupp/UX4g87utLVmtqF9/Zu\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 42,\n                \"title\": \"bullying a person with Scorpio zodiac\",\n                \"desc\": \"apropos hope bah gratefully furthermore past rosin pfft during excluding\",\n                \"priority\": \"medium\",\n                \"deadline\": \"2025-02-01T21:07:40.686Z\",\n                \"is_done\": false,\n                \"created_by\": \"Reanna\",\n                \"created_at\": \"2025-02-08T01:27:11.358Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.358Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 43,\n            \"user_id\": 3,\n            \"task_id\": 43,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 43,\n                \"title\": \"bullying a person with Libra zodiac\",\n                \"desc\": \"indeed meh before delightfully gleaming what commemorate before practical aw\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-08-03T06:51:47.247Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:11.546Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.546Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 44,\n            \"user_id\": 1,\n            \"task_id\": 44,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 44,\n                \"title\": \"bullying a person with Sagittarius zodiac\",\n                \"desc\": \"dock rosin schnitzel outside playfully boo sheepishly anenst into wherever\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-10-08T16:40:56.806Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:11.671Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.671Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 45,\n            \"user_id\": 3,\n            \"task_id\": 45,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 45,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"till via oh brr sparse brr except that atop incomplete\",\n                \"priority\": \"high\",\n                \"deadline\": \"2024-08-24T16:20:01.707Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:11.888Z\",\n                \"updated_at\": \"2025-02-08T01:27:11.888Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 46,\n            \"user_id\": 4,\n            \"task_id\": 46,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 46,\n                \"title\": \"bullying a person with Taurus zodiac\",\n                \"desc\": \"mouser ripe flickering after muted yet telescope legitimize ha sunbathe\",\n                \"priority\": \"low\",\n                \"deadline\": \"2025-11-18T09:37:56.112Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:12.024Z\",\n                \"updated_at\": \"2025-02-08T01:27:12.024Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 47,\n            \"user_id\": 4,\n            \"task_id\": 47,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 47,\n                \"title\": \"bullying a person with Leo zodiac\",\n                \"desc\": \"unique psst comestible joshingly decriminalize warmly smoke gosh wherever huzzah\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-02-11T03:49:46.104Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:12.199Z\",\n                \"updated_at\": \"2025-02-08T01:27:12.199Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 48,\n            \"user_id\": 1,\n            \"task_id\": 48,\n            \"user\": {\n                \"id\": 1,\n                \"username\": \"Eveline\",\n                \"email\": \"Eveline.Schultz41@hotmail.com\",\n                \"password\": \"$2b$10$w9ya5cgYxRX3EolTxIcYTeAuBsBGTcRUrB7oadQrPMeZvzZyIN3T2\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 48,\n                \"title\": \"bullying a person with Aquarius zodiac\",\n                \"desc\": \"completion decent yahoo underneath ouch wherever sensitize worriedly leap diagram\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-09-10T15:07:25.905Z\",\n                \"is_done\": false,\n                \"created_by\": \"Eveline\",\n                \"created_at\": \"2025-02-08T01:27:12.317Z\",\n                \"updated_at\": \"2025-02-08T01:27:12.317Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 49,\n            \"user_id\": 3,\n            \"task_id\": 49,\n            \"user\": {\n                \"id\": 3,\n                \"username\": \"Emery\",\n                \"email\": \"Emery_Wisozk84@gmail.com\",\n                \"password\": \"$2b$10$aMuHXralpxRxRIarBEklYuN3BswJHapjVAriknuoMqnqn.XeRo1ge\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 49,\n                \"title\": \"bullying a person with Aries zodiac\",\n                \"desc\": \"connect aw unto for eek yippee who ouch intend pfft\",\n                \"priority\": \"low\",\n                \"deadline\": \"2024-10-08T19:23:36.098Z\",\n                \"is_done\": false,\n                \"created_by\": \"Emery\",\n                \"created_at\": \"2025-02-08T01:27:12.422Z\",\n                \"updated_at\": \"2025-02-08T01:27:12.422Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        },\n        {\n            \"id\": 50,\n            \"user_id\": 4,\n            \"task_id\": 50,\n            \"user\": {\n                \"id\": 4,\n                \"username\": \"Delmer\",\n                \"email\": \"Delmer_Shields@hotmail.com\",\n                \"password\": \"$2b$10$acN22nGdsnU5PyjVkW0RyeOTqKRgpZjJJFRIxca6RWcjoSN0C9Jum\",\n                \"created_at\": \"2025-02-08T01:26:55.079Z\",\n                \"updated_at\": \"2025-02-08T01:26:55.079Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            },\n            \"task\": {\n                \"id\": 50,\n                \"title\": \"bullying a person with Taurus zodiac\",\n                \"desc\": \"always supposing countess on yum as continually um potentially hence\",\n                \"priority\": \"high\",\n                \"deadline\": \"2025-08-10T23:52:20.933Z\",\n                \"is_done\": false,\n                \"created_by\": \"Delmer\",\n                \"created_at\": \"2025-02-08T01:27:12.527Z\",\n                \"updated_at\": \"2025-02-08T01:27:12.527Z\",\n                \"deleted_at\": null,\n                \"is_deleted\": false\n            }\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Get User Task by Id",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/user-task/get-user-task/1/1"
+						"url": "{{base_url}}:{{port}}/user-task/get-user-task/2/1"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get User Task by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}:{{port}}/user-task/get-user-task/2/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"86-fLt7NB222EnYaXXc3QGj6itRAfw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:36:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil mengambil UserTask dengan user_id:2 task_id:1\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 2,\n        \"task_id\": 1\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Create User Task",
@@ -138,7 +432,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"user_id\": 5,\r\n    \"task_id\": 1\r\n}",
+							"raw": "{\r\n    \"user_id\": 2,\r\n    \"task_id\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -147,7 +441,60 @@
 						},
 						"url": "{{base_url}}:{{port}}/user-task/create"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create User Task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"user_id\": 2,\r\n    \"task_id\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/user-task/create"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "115"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"73-HH/AMOgWV4ThejLIQqHJMzOfLpw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:36:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil menambahkan data UserTask\"\n    },\n    \"data\": {\n        \"id\": 51,\n        \"user_id\": 2,\n        \"task_id\": 1\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Update User Task",
@@ -156,25 +503,122 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userId\": 1,\r\n    \"taskId\": 2\r\n}",
+							"raw": "{\r\n    \"userId\": 2,\r\n    \"taskId\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{base_url}}:{{port}}/user-task/update-user-task/5/1"
+						"url": "{{base_url}}:{{port}}/user-task/update-user-task/2/1"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update User Task",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"userId\": 3,\r\n    \"taskId\": 3\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/user-task/update-user-task/2/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "110"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6e-8yMK1Hv/BfdZ+huqCsMoFSZ4IAI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:38:42 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil memperbarui UserTask\"\n    },\n    \"data\": {\n        \"id\": 51,\n        \"user_id\": 3,\n        \"task_id\": 3\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete User Task",
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/user-task/delete/1/2"
+						"url": "{{base_url}}:{{port}}/user-task/delete/2/1"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Delete User Task",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": "{{base_url}}:{{port}}/user-task/delete/2/1"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"86-Np1tzdR4zZ7Ifv55lw7Uny7Mdqs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:36:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil menghapus UserTask dengan user_id:2 task_id:1\"\n    },\n    \"data\": {\n        \"id\": 1,\n        \"user_id\": 2,\n        \"task_id\": 1\n    }\n}"
+						}
+					]
 				}
 			]
 		},
@@ -204,18 +648,112 @@
 								"type": "text"
 							}
 						],
-						"url": "{{base_url}}:{{port}}/users/get-all/"
+						"url": "{{base_url}}:{{port}}/tasks/get-all/"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Tasks",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "",
+										"value": "",
+										"type": "text"
+									}
+								],
+								"url": "{{base_url}}:{{port}}/tasks/get-all/"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "17483"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"444b-UQUZlxhLXJ+5ZxLUnvWjiSNUoKA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:31:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil mengambil semua data tugas\"\n    },\n    \"data\": [\n        {\n            \"id\": 1,\n            \"title\": \"bullying a person with Cancer zodiac\",\n            \"desc\": \"intently tuber geez valiantly vice kissingly quaff gosh snuggle debit\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-02-08T14:04:08.663Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:06.145Z\",\n            \"updated_at\": \"2025-02-08T01:27:06.145Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 2,\n            \"title\": \"bullying a person with Libra zodiac\",\n            \"desc\": \"embalm than reassemble ouch by pish accredit why highly following\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-03-15T10:50:01.421Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:06.500Z\",\n            \"updated_at\": \"2025-02-08T01:27:06.500Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 3,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"though noisily license fooey license another astride downchange following conservative\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2025-11-11T18:52:02.055Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:06.736Z\",\n            \"updated_at\": \"2025-02-08T01:27:06.736Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 4,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"psst crystallize gripping safeguard off yin since equally towards bob\",\n            \"priority\": \"low\",\n            \"deadline\": \"2026-01-20T11:57:17.515Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:06.861Z\",\n            \"updated_at\": \"2025-02-08T01:27:06.861Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 5,\n            \"title\": \"bullying a person with Gemini zodiac\",\n            \"desc\": \"frightened violently interestingly underneath crushing heartbeat crank intently cruelly dim\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-10-27T10:03:04.377Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:06.991Z\",\n            \"updated_at\": \"2025-02-08T01:27:06.991Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 6,\n            \"title\": \"bullying a person with Libra zodiac\",\n            \"desc\": \"lounge phew at eggplant longboat ha spectacles failing that even\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-06-27T09:55:36.385Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:07.110Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.110Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 7,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"really through broken bleakly outside pressure dearly yarmulke smoothly probable\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2025-01-02T08:45:29.256Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:07.215Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.215Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 8,\n            \"title\": \"bullying a person with Gemini zodiac\",\n            \"desc\": \"wholly catalog daintily off strategy ew uh-huh inside when yowza\",\n            \"priority\": \"high\",\n            \"deadline\": \"2024-12-20T16:16:53.741Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:07.333Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.333Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 9,\n            \"title\": \"bullying a person with Sagittarius zodiac\",\n            \"desc\": \"of oh icebreaker duh cricket anti yet how aw cleverly\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-06-28T16:32:39.418Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:07.436Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.436Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 10,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"including convince legging supposing bootleg affiliate doodle phooey and retract\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-06-17T03:36:59.784Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:07.574Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.574Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 11,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"rectangular during rotating for once proper sin er knight functional\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-06-24T12:35:13.509Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:07.674Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.674Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 12,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"sans jaggedly bobble yowza worth through from soggy urban across\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-09-15T19:55:23.754Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:07.765Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.765Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 13,\n            \"title\": \"bullying a person with Libra zodiac\",\n            \"desc\": \"adventurously pry curse ew soft gosh ugh outrun monthly bicycle\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-10-05T00:57:51.112Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:07.869Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.869Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 14,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"unfurl beside fork instead meaty icebreaker through even till internationalize\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-02-18T09:19:53.507Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:07.965Z\",\n            \"updated_at\": \"2025-02-08T01:27:07.965Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 15,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"conceptualize into regarding idolized ascertain hurtful airport density miserably maestro\",\n            \"priority\": \"high\",\n            \"deadline\": \"2024-06-03T12:27:45.623Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:08.071Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.071Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 16,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"boohoo however yowza fooey viciously whereas at which intermix on\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2025-11-13T16:57:06.193Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:08.179Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.179Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 17,\n            \"title\": \"bullying a person with Pisces zodiac\",\n            \"desc\": \"till mobilize gah beneficial boo dispose dual guide gosh why\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2025-02-14T15:54:29.898Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:08.287Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.287Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 18,\n            \"title\": \"bullying a person with Cancer zodiac\",\n            \"desc\": \"so bah often ample stark complication meaningfully affect for gee\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-01-07T16:02:49.655Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:08.393Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.393Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 19,\n            \"title\": \"bullying a person with Aquarius zodiac\",\n            \"desc\": \"phooey amid resolve besides disgorge dreamily merrily tankful after for\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-09-24T09:59:07.024Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:08.491Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.491Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 20,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"though highlight rudely that advertisement unlike conservative zowie enormously round\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-01-08T16:59:09.251Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:08.631Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.631Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 21,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"sleepily blight reconsideration ornery woot for whoever psst woot aha\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-05-28T13:05:28.522Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:08.735Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.735Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 22,\n            \"title\": \"bullying a person with Virgo zodiac\",\n            \"desc\": \"yowza brr so whether aha guidance whose woot ick roger\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-06-20T21:15:07.816Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:08.858Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.858Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 23,\n            \"title\": \"bullying a person with Libra zodiac\",\n            \"desc\": \"for aw mid yummy crystallize palate huzzah furthermore gripping welcome\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-01-20T01:25:56.633Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:08.955Z\",\n            \"updated_at\": \"2025-02-08T01:27:08.955Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 24,\n            \"title\": \"bullying a person with Aquarius zodiac\",\n            \"desc\": \"valley majestic nauseate staid psst out for prioritize formal excepting\",\n            \"priority\": \"high\",\n            \"deadline\": \"2024-07-20T12:14:01.067Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:09.052Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.052Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 25,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"poorly supposing or via since majority whereas ouch porter misappropriate\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-08-14T22:12:26.401Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:09.163Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.163Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 26,\n            \"title\": \"bullying a person with Taurus zodiac\",\n            \"desc\": \"allegation mortise neaten evince proliferate lest finally yippee ah regarding\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-12-21T00:18:55.472Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:09.264Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.264Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 27,\n            \"title\": \"bullying a person with Pisces zodiac\",\n            \"desc\": \"for treasure muted distorted yuck youthfully within anenst newsprint kissingly\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-06-17T16:33:39.779Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:09.371Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.371Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 28,\n            \"title\": \"bullying a person with Virgo zodiac\",\n            \"desc\": \"worth beneficial tousle importance teammate cease reference after sizzle amongst\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-06-06T14:25:33.588Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:09.472Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.472Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 29,\n            \"title\": \"bullying a person with Capricorn zodiac\",\n            \"desc\": \"than bah as mmm whoever incidentally apud metabolite indelible what\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-04-27T12:13:56.694Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:09.586Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.586Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 30,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"dampen and highly recent essence pish suspiciously although once yahoo\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-02-16T05:52:50.500Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:09.693Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.693Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 31,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"trial surge gosh vaguely guzzle because summer beyond embalm ferociously\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-09-10T14:27:39.291Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:09.856Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.856Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 32,\n            \"title\": \"bullying a person with Scorpio zodiac\",\n            \"desc\": \"celebrate wrongly quaintly monocle barring sunbeam mystify unit times vainly\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-10-19T20:14:49.477Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:09.980Z\",\n            \"updated_at\": \"2025-02-08T01:27:09.980Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 33,\n            \"title\": \"bullying a person with Virgo zodiac\",\n            \"desc\": \"forenenst tremendously napkin exempt whenever carelessly ah speedily joyfully and\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-11-11T23:10:27.933Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:10.110Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.110Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 34,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"a along ah and fiercely or potentially fidget fellow towards\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-01-16T15:16:16.443Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:10.229Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.229Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 35,\n            \"title\": \"bullying a person with Taurus zodiac\",\n            \"desc\": \"whistle emphasize bah as drat ownership afford record wear equate\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-07-25T02:19:09.604Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:10.455Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.455Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 36,\n            \"title\": \"bullying a person with Cancer zodiac\",\n            \"desc\": \"wherever shakily now after if joyously hydrocarbon grim gracious closely\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-06-05T23:49:09.750Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:10.712Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.712Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 37,\n            \"title\": \"bullying a person with Cancer zodiac\",\n            \"desc\": \"seriously valiantly gosh absent oh low selfish gee disloyal woot\",\n            \"priority\": \"low\",\n            \"deadline\": \"2026-02-03T15:16:21.576Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:10.824Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.824Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 38,\n            \"title\": \"bullying a person with Aquarius zodiac\",\n            \"desc\": \"per lovingly to monthly chip chasuble worthless extension ew all\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-06-02T23:24:22.518Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:10.927Z\",\n            \"updated_at\": \"2025-02-08T01:27:10.927Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 39,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"yippee that attend svelte punctually fill vice fax although freezing\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-03-22T06:15:18.357Z\",\n            \"is_done\": false,\n            \"created_by\": \"Finn\",\n            \"created_at\": \"2025-02-08T01:27:11.044Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.044Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 40,\n            \"title\": \"bullying a person with Pisces zodiac\",\n            \"desc\": \"ugh rag exalted athwart onto irresponsible deadly ha vivaciously apud\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2024-11-12T22:31:05.533Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:11.139Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.139Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 41,\n            \"title\": \"bullying a person with Taurus zodiac\",\n            \"desc\": \"reach where inasmuch till exotic scarily mill past aha atop\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-07-28T02:25:38.931Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:11.245Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.245Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 42,\n            \"title\": \"bullying a person with Scorpio zodiac\",\n            \"desc\": \"apropos hope bah gratefully furthermore past rosin pfft during excluding\",\n            \"priority\": \"medium\",\n            \"deadline\": \"2025-02-01T21:07:40.686Z\",\n            \"is_done\": false,\n            \"created_by\": \"Reanna\",\n            \"created_at\": \"2025-02-08T01:27:11.358Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.358Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 43,\n            \"title\": \"bullying a person with Libra zodiac\",\n            \"desc\": \"indeed meh before delightfully gleaming what commemorate before practical aw\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-08-03T06:51:47.247Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:11.546Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.546Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 44,\n            \"title\": \"bullying a person with Sagittarius zodiac\",\n            \"desc\": \"dock rosin schnitzel outside playfully boo sheepishly anenst into wherever\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-10-08T16:40:56.806Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:11.671Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.671Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 45,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"till via oh brr sparse brr except that atop incomplete\",\n            \"priority\": \"high\",\n            \"deadline\": \"2024-08-24T16:20:01.707Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:11.888Z\",\n            \"updated_at\": \"2025-02-08T01:27:11.888Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 46,\n            \"title\": \"bullying a person with Taurus zodiac\",\n            \"desc\": \"mouser ripe flickering after muted yet telescope legitimize ha sunbathe\",\n            \"priority\": \"low\",\n            \"deadline\": \"2025-11-18T09:37:56.112Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:12.024Z\",\n            \"updated_at\": \"2025-02-08T01:27:12.024Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 47,\n            \"title\": \"bullying a person with Leo zodiac\",\n            \"desc\": \"unique psst comestible joshingly decriminalize warmly smoke gosh wherever huzzah\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-02-11T03:49:46.104Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:12.199Z\",\n            \"updated_at\": \"2025-02-08T01:27:12.199Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 48,\n            \"title\": \"bullying a person with Aquarius zodiac\",\n            \"desc\": \"completion decent yahoo underneath ouch wherever sensitize worriedly leap diagram\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-09-10T15:07:25.905Z\",\n            \"is_done\": false,\n            \"created_by\": \"Eveline\",\n            \"created_at\": \"2025-02-08T01:27:12.317Z\",\n            \"updated_at\": \"2025-02-08T01:27:12.317Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 49,\n            \"title\": \"bullying a person with Aries zodiac\",\n            \"desc\": \"connect aw unto for eek yippee who ouch intend pfft\",\n            \"priority\": \"low\",\n            \"deadline\": \"2024-10-08T19:23:36.098Z\",\n            \"is_done\": false,\n            \"created_by\": \"Emery\",\n            \"created_at\": \"2025-02-08T01:27:12.422Z\",\n            \"updated_at\": \"2025-02-08T01:27:12.422Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        },\n        {\n            \"id\": 50,\n            \"title\": \"bullying a person with Taurus zodiac\",\n            \"desc\": \"always supposing countess on yum as continually um potentially hence\",\n            \"priority\": \"high\",\n            \"deadline\": \"2025-08-10T23:52:20.933Z\",\n            \"is_done\": false,\n            \"created_by\": \"Delmer\",\n            \"created_at\": \"2025-02-08T01:27:12.527Z\",\n            \"updated_at\": \"2025-02-08T01:27:12.527Z\",\n            \"deleted_at\": null,\n            \"is_deleted\": false\n        }\n    ]\n}"
+						}
+					]
 				},
 				{
 					"name": "Get Task by Id",
 					"request": {
 						"method": "GET",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/users/get-user/2"
+						"url": "{{base_url}}:{{port}}/tasks/get-task/2"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Get Task by Id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": "{{base_url}}:{{port}}/tasks/get-task/2"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "430"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ae-ZclMVSOpCxq8LS42HZNtbqQOBPg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:31:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil mengambil data pengguna dengan id:2\"\n    },\n    \"data\": {\n        \"id\": 2,\n        \"title\": \"bullying a person with Libra zodiac\",\n        \"desc\": \"embalm than reassemble ouch by pish accredit why highly following\",\n        \"priority\": \"high\",\n        \"deadline\": \"2025-03-15T10:50:01.421Z\",\n        \"is_done\": false,\n        \"created_by\": \"Finn\",\n        \"created_at\": \"2025-02-08T01:27:06.500Z\",\n        \"updated_at\": \"2025-02-08T01:27:06.500Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Create Task",
@@ -224,41 +762,147 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"farras123\",\r\n    \"email\": \"farras123@gmail.com\",\r\n    \"password\": \"cuk123\"\r\n}",
+							"raw": "{\r\n    \"title\": \"1buaallying a person with Capricorn zodiac\",\r\n        \"desc\": \"justly extension ugh versus alongside doubter boohoo among carouse bend\",\r\n        \"priority\": \"low\",\r\n        \"deadline\": \"2026-01-09T11:21:49.837Z\",\r\n        \"is_done\": false,\r\n        \"created_by\": \"Jess\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{base_url}}:{{port}}/users/create"
+						"url": "{{base_url}}:{{port}}/tasks/create"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Create Task",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"1buaallying a person with Capricorn zodiac\",\r\n        \"desc\": \"justly extension ugh versus alongside doubter boohoo among carouse bend\",\r\n        \"priority\": \"low\",\r\n        \"deadline\": \"2026-01-09T11:21:49.837Z\",\r\n        \"is_done\": false,\r\n        \"created_by\": \"Jess\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/tasks/create"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "430"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1ae-piP/A3ukQ6nErqv+sNsm9um/AXw\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:31:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil menambahkan data tugas\"\n    },\n    \"data\": {\n        \"id\": 51,\n        \"title\": \"1buaallying a person with Capricorn zodiac\",\n        \"desc\": \"justly extension ugh versus alongside doubter boohoo among carouse bend\",\n        \"priority\": \"low\",\n        \"deadline\": \"2026-01-09T11:21:49.837Z\",\n        \"is_done\": false,\n        \"created_by\": \"Jess\",\n        \"created_at\": \"2025-02-08T01:31:54.214Z\",\n        \"updated_at\": \"2025-02-08T01:31:54.214Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
-					"name": "Update User",
+					"name": "Update Task",
 					"request": {
 						"method": "PUT",
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"password\": \"anjay123\"\r\n}",
+							"raw": "{\r\n    \"title\": \"anjay123\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
 								}
 							}
 						},
-						"url": "{{base_url}}:{{port}}/users/update/1"
+						"url": "{{base_url}}:{{port}}/tasks/update/1"
 					},
-					"response": []
+					"response": [
+						{
+							"name": "Update User",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"title\": \"anjay123\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{base_url}}:{{port}}/tasks/update/51"
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "X-Powered-By",
+									"value": "Express"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "407"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"197-oHCQW7IIT7LGn7Dbaac+CDp6r58\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 08 Feb 2025 01:35:03 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": {\n        \"success\": true,\n        \"message\": \"Berhasil memperbarui pengguna dengan id:51\"\n    },\n    \"data\": {\n        \"id\": 51,\n        \"title\": \"anjay123\",\n        \"desc\": \"justly extension ugh versus alongside doubter boohoo among carouse bend\",\n        \"priority\": \"low\",\n        \"deadline\": \"2026-01-09T11:21:49.837Z\",\n        \"is_done\": false,\n        \"created_by\": \"Jess\",\n        \"created_at\": \"2025-02-08T01:31:54.214Z\",\n        \"updated_at\": \"2025-02-08T01:35:03.265Z\",\n        \"deleted_at\": null,\n        \"is_deleted\": false\n    }\n}"
+						}
+					]
 				},
 				{
 					"name": "Delete Task",
 					"request": {
 						"method": "DELETE",
 						"header": [],
-						"url": "{{base_url}}:{{port}}/users/delete/1"
+						"url": "{{base_url}}:{{port}}/tasks/delete/3"
 					},
 					"response": []
 				}
@@ -271,7 +915,51 @@
 				"header": [],
 				"url": "{{base_url}}:{{port}}"
 			},
-			"response": []
+			"response": [
+				{
+					"name": "Greeting API",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{base_url}}:{{port}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "69"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"45-doCEcJ5gwoqnjgLIBZJ2LZIG80Q\""
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 08 Feb 2025 01:38:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "Selamat Datang\n Rest CRUD API with Node.js, Express, and Postgres API"
+				}
+			]
 		}
 	]
 }

@@ -163,7 +163,9 @@ router.put(
             const conflictingTask = await prisma.task.findFirst({
                 where: {
                     id: { not: parseInt(id) },
-                    OR: { title: title },
+                    OR: [
+                        { title: title }
+                    ],
                 },
             });
 
@@ -188,8 +190,11 @@ router.put(
 // Delete Task
 router.delete("/delete/:id", checkTaskExist, async (req, res) => {
     const { id } = req.params;
-    const task = await prisma.task.delete({
+    const task = await prisma.task.update({
         where: { id: parseInt(id) },
+        data: {
+            is_deleted: true
+        }
     });
 
     return res
