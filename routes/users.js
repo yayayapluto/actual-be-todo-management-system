@@ -26,6 +26,13 @@ async function checkUserExists(req, res, next) {
 // Get All Users
 router.get("/get-all", async (req, res) => {
   const users = await prisma.user.findMany();
+
+  if (users.length === 0) {
+    return res
+      .status(404)
+      .json(apiResponse(true, "Tidak ada data pengguna", null))
+  }
+
   return res
     .status(200)
     .json(apiResponse(true, "Berhasil mengambil semua data pengguna", users));

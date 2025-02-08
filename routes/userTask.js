@@ -40,6 +40,13 @@ router.get('/get-all', async function (req, res, next) {
             task: true
         }
     });
+
+    if (userTasks.length === 0) {
+        return res
+            .status(404)
+            .json(apiResponse(true, "Tidak ada data UserTask", null))
+    }
+
     return res
         .status(200)
         .json(apiResponse(true, "Berhasil memgambil demua data UserTask", userTasks))

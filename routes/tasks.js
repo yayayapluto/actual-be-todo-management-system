@@ -27,6 +27,13 @@ async function checkTaskExist(req, res, next) {
 // Get All Tasks
 router.get("/get-all", async (req, res, next) => {
     const tasks = await prisma.task.findMany();
+
+    if (tasks.length === 0) {
+        return res
+            .status(404)
+            .json(apiResponse(true, "Tidak ada data tugas", null))
+    }
+
     return res
         .status(200)
         .json(apiResponse(true, "Berhasil mengambil semua data tugas", tasks))
