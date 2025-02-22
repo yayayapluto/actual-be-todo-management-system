@@ -11,7 +11,8 @@
     "seed": "node ./prisma/seed",
     "dev": "nodemon -w ./*.js ./*.js",
     "start": "node ./bin/www",
-    "prepare": "husky"
+    "prepare": "husky",
+    "postinstall": "npx prisma migrate dev && npx prisma generate"
   },
   "dependencies": {
     "@faker-js/faker": "^9.4.0",
