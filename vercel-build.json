@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "*.js",
+            "use": "@vercel/node",
+            "config": {
+                "buildCommand": "prisma migrate dev && prisma generate"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/bin/www"
+        }
+    ]
+}
