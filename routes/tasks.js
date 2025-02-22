@@ -25,7 +25,7 @@ async function checkTaskExist(req, res, next) {
 }
 
 // Get All Tasks
-router.get("/get-all", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
     const tasks = await prisma.task.findMany();
 
     if (tasks.length === 0) {
@@ -40,7 +40,7 @@ router.get("/get-all", async (req, res, next) => {
 })
 
 // Get Task By ID
-router.get("/get-task/:id", checkTaskExist, async (req, res, next) => {
+router.get("/:id", checkTaskExist, async (req, res, next) => {
     const { id } = req.params;
     return res.status(200).json(
         apiResponse(true, `Berhasil mengambil data pengguna dengan id:${id}`, req.task)
@@ -49,7 +49,7 @@ router.get("/get-task/:id", checkTaskExist, async (req, res, next) => {
 
 // Create Task
 router.post(
-    "/create",
+    "/",
     [
         body("title")
             .notEmpty().withMessage("Field title tidak boleh kosong")
@@ -113,7 +113,7 @@ router.post(
 
 // Update Task
 router.put(
-    "/update/:id",
+    "/:id",
     [
         checkTaskExist,
         body("title")
@@ -195,7 +195,7 @@ router.put(
 )
 
 // Delete Task
-router.delete("/delete/:id", checkTaskExist, async (req, res) => {
+router.delete("/:id", checkTaskExist, async (req, res) => {
     const { id } = req.params;
     const task = await prisma.task.update({
         where: { id: parseInt(id) },

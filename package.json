@@ -1,8 +1,12 @@
 {
   "name": "be-to-do-management-system",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "type": "commonjs",
+  "main": "index.js",
+  "engines": {
+    "node": "22.x"
+  },
   "scripts": {
     "seed": "node ./prisma/seed",
     "dev": "nodemon -w ./*.js ./*.js",

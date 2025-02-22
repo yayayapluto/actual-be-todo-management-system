@@ -4,7 +4,7 @@
  * Module dependencies.
  */
 
-var app = require('../app');
+var app = require('../index');
 var debug = require('debug')('be-to-do-management-system:server');
 var http = require('http');
 
@@ -13,11 +13,17 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || 4000);
-app.set('port', port);
+var env = normalizePort(process.env.ENV_TYPE || "production");
+if (env === "development") {
+  app.set('port', port)
+  console.log(
+    `Server running on http://localhost:${port}`
+  )
+};
 
 /**
  * Create HTTP server.
- */
+*/
 
 var server = http.createServer(app);
 

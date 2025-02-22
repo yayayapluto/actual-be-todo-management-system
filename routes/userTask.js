@@ -33,7 +33,7 @@ async function checkUserTaskExists(req, res, next) {
 }
 
 // Get All Users Task
-router.get('/get-all', async function (req, res, next) {
+router.get('/', async function (req, res, next) {
     const userTasks = await prisma.userTask.findMany({
         include: {
             user: true,
@@ -53,7 +53,7 @@ router.get('/get-all', async function (req, res, next) {
 });
 
 // Get User Task by ID
-router.get('/get-user-task/:user_id/:task_id',
+router.get('/:user_id/:task_id',
     [checkUserTaskExists],
     async function (req, res, next) {
         const { user_id, task_id } = req.params;
@@ -69,7 +69,7 @@ router.get('/get-user-task/:user_id/:task_id',
 
 // Create User Task 
 router.post(
-    '/create',
+    '/',
     [
         body("user_id")
             .notEmpty().withMessage("Field user_id tidak boleh kosong")
@@ -112,7 +112,7 @@ router.post(
 
 // Update User Task
 router.put(
-    '/update-user-task/:user_id/:task_id',
+    '/:user_id/:task_id',
     [
         checkUserTaskExists,
         body("userId")
@@ -181,7 +181,7 @@ router.put(
 
 // Delete User
 router.delete(
-    '/delete/:user_id/:task_id',
+    '/:user_id/:task_id',
     [checkUserTaskExists],
     async function (req, res, next) {
         const { user_id, task_id } = req.params;

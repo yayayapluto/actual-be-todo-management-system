@@ -24,7 +24,7 @@ async function checkUserExists(req, res, next) {
 }
 
 // Get All Users
-router.get("/get-all", async (req, res) => {
+router.get("/", async (req, res) => {
   const users = await prisma.user.findMany();
 
   if (users.length === 0) {
@@ -39,7 +39,7 @@ router.get("/get-all", async (req, res) => {
 });
 
 // Get User by ID
-router.get("/get-user/:id", checkUserExists, async (req, res) => {
+router.get("/:id", checkUserExists, async (req, res) => {
   const { id } = req.params;
   return res.status(200).json(
     apiResponse(true, `Berhasil mengambil data pengguna dengan id:${id}`, req.user)
@@ -48,7 +48,7 @@ router.get("/get-user/:id", checkUserExists, async (req, res) => {
 
 // Create User
 router.post(
-  "/create",
+  "/",
   [
     body("username")
       .notEmpty().withMessage("Username tidak boleh kosong"),
@@ -100,7 +100,7 @@ router.post(
 
 // Update User
 router.put(
-  "/update/:id",
+  "/:id",
   [
     checkUserExists,
     body("email")
@@ -163,7 +163,7 @@ router.put(
 );
 
 // Delete User
-router.delete("/delete/:id", checkUserExists, async (req, res) => {
+router.delete("/:id", checkUserExists, async (req, res) => {
   const { id } = req.params;
   const user = await prisma.user.update({
     where: { id: parseInt(id) },
