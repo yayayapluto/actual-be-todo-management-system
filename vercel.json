@@ -11,5 +11,8 @@
             "src": "/(.*)",
             "dest": "/bin/www"
         }
-    ]
+    ],
+    "scripts": {
+        "postinstall": "prisma generate"
+    }
 }
